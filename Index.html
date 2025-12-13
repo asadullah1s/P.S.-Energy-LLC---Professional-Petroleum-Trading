@@ -1,493 +1,966 @@
-<!---<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P.S. Energy LLC | Global Petroleum Products Buyer</title>
+    <title>Ergonomic Memory Foam Seat Cushion | Premium Comfort for Office & Car</title>
+    <meta name="description" content="Discover our premium ergonomic memory foam seat cushion designed for office workers, drivers, and anyone who sits for long hours. Experience enhanced comfort with our high-density foam cushion.">
+    
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --primary-blue: #003366;
-            --secondary-gold: #FFD700;
-            --accent-gray: #2C3E50;
-            --light-bg: #F8F9FA;
-            --dark-text: #212529;
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --primary: #2c3e50; /* Deep Navy */
+            --secondary: #3498db; /* Soft Blue */
+            --accent: #ff9900; /* Amazon Orange */
+            --light: #f8f9fa;
+            --dark: #1a2530;
+            --gray: #7f8c8d;
+            --teal: #1abc9c;
         }
+        
         body {
             font-family: 'Open Sans', sans-serif;
-            color: var(--dark-text);
-            padding-top: 76px;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
+        
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-        }
-        .navbar {
-            background-color: var(--primary-blue) !important;
-            padding: 1rem 0;
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-        }
-        .navbar-brand {
             font-weight: 700;
-            font-size: 1.8rem;
-            color: white !important;
+            color: var(--primary);
         }
-        .navbar-brand span {
-            color: var(--secondary-gold);
-        }
-        .nav-link {
-            color: rgba(255, 255, 255, 0.9) !important;
-            font-weight: 500;
-            margin: 0 8px;
-            transition: color 0.3s;
-        }
-        .nav-link:hover, .nav-link.active {
-            color: var(--secondary-gold) !important;
-        }
-        .hero-section {
-            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 120px 0 100px;
-            text-align: center;
-        }
-        .hero-section h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-        }
-        .hero-section .lead {
-            font-size: 1.4rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            opacity: 0.95;
-        }
-        .btn-primary {
-            background-color: var(--secondary-gold);
-            border-color: var(--secondary-gold);
-            color: var(--primary-blue);
-            font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 30px;
-            transition: all 0.3s;
-        }
-        .btn-primary:hover {
-            background-color: #ffed4e;
-            border-color: #ffed4e;
-            transform: translateY(-3px);
-            box-shadow: 0 7px 14px rgba(255, 215, 0, 0.2);
-        }
+        
         .section-title {
-            color: var(--primary-blue);
             position: relative;
-            padding-bottom: 15px;
             margin-bottom: 3rem;
             text-align: center;
         }
+        
         .section-title:after {
             content: '';
             position: absolute;
-            bottom: 0;
+            width: 70px;
+            height: 4px;
+            background: var(--teal);
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--secondary-gold);
+            border-radius: 2px;
         }
-        .card {
-            border: none;
-            border-radius: 12px;
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 100px 0 80px;
+            position: relative;
             overflow: hidden;
-            transition: all 0.4s ease;
-            height: 100%;
-            box-shadow: var(--shadow);
         }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        
+        .hero-title {
+            font-size: 3.2rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
         }
-        .card-icon {
-            font-size: 2.5rem;
-            color: var(--secondary-gold);
-            margin-bottom: 1.2rem;
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: var(--gray);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
         }
-        .product-card .card-header {
-            background-color: var(--primary-blue);
+        
+        .hero-image {
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: transform 0.5s ease;
+        }
+        
+        .hero-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            background-color: var(--accent);
+            border: none;
             color: white;
+            padding: 16px 40px;
+            font-size: 1.2rem;
             font-weight: 600;
-            padding: 1.2rem;
-            text-align: center;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
-        .company-details {
-            background-color: var(--light-bg);
+        
+        .cta-button:hover {
+            background-color: #e68900;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 153, 0, 0.4);
+            color: white;
+        }
+        
+        .cta-button i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+        
+        /* Trust Indicators */
+        .trust-indicators {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 2rem;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+            color: var(--gray);
+        }
+        
+        .trust-item i {
+            color: var(--teal);
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        /* Cards */
+        .feature-card {
+            background: white;
             border-radius: 12px;
             padding: 2rem;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
         }
-        .detail-item {
-            margin-bottom: 1.2rem;
-            border-bottom: 1px solid #eaeaea;
-            padding-bottom: 1rem;
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
         }
-        .detail-item:last-child {
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(26, 188, 156, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-icon i {
+            font-size: 1.8rem;
+            color: var(--teal);
+        }
+        
+        /* Product Solution */
+        .product-image {
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .benefit-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .benefit-list li {
+            padding: 10px 0;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .benefit-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 26px;
+            height: 26px;
+            background: rgba(26, 188, 156, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--teal);
+            font-weight: bold;
+        }
+        
+        /* How It Works */
+        .step-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--teal);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 1.5rem;
+        }
+        
+        /* Audience Grid */
+        .audience-card {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .audience-card:hover {
+            background: var(--teal);
+            color: white;
+        }
+        
+        .audience-card:hover h5,
+        .audience-card:hover i {
+            color: white;
+        }
+        
+        .audience-card i {
+            font-size: 2.5rem;
+            color: var(--teal);
+            margin-bottom: 1rem;
+        }
+        
+        /* Review Cards */
+        .review-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            height: 100%;
+            position: relative;
+            border: 1px solid #eee;
+        }
+        
+        .review-card:before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(26, 188, 156, 0.15);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .stars {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        }
+        
+        .table-header {
+            background: var(--primary);
+            color: white;
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .table-row {
+            display: flex;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .table-row:last-child {
             border-bottom: none;
         }
-        .detail-label {
-            font-weight: 600;
-            color: var(--primary-blue);
-            margin-bottom: 0.3rem;
+        
+        .table-cell {
+            padding: 1.2rem;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .contact-info a {
-            color: var(--primary-blue);
-            text-decoration: none;
-            transition: color 0.3s;
+        
+        .feature-name {
+            justify-content: flex-start;
+            font-weight: 500;
         }
-        .contact-info a:hover {
-            color: var(--secondary-gold);
-            text-decoration: underline;
+        
+        .check-mark {
+            color: var(--teal);
+            font-size: 1.5rem;
         }
-        .footer {
-            background-color: var(--accent-gray);
+        
+        .x-mark {
+            color: #e74c3c;
+            font-size: 1.5rem;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a2530 100%);
             color: white;
+            padding: 5rem 0;
+            border-radius: 20px;
+            margin: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-cta:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.03)"/></svg>');
+            background-size: cover;
+        }
+        
+        .final-cta h2 {
+            color: white;
+        }
+        
+        .final-cta .section-title:after {
+            background: white;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: #bdc3c7;
             padding: 3rem 0 1.5rem;
         }
+        
         .footer a {
-            color: #ccc;
+            color: #bdc3c7;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
         }
+        
         .footer a:hover {
-            color: var(--secondary-gold);
+            color: white;
         }
-        .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            text-align: center;
-            line-height: 40px;
-            margin-right: 10px;
-            transition: all 0.3s;
+        
+        .disclaimer {
+            font-size: 0.85rem;
+            border-top: 1px solid #34495e;
+            padding-top: 1.5rem;
+            margin-top: 2rem;
         }
-        .social-icons a:hover {
-            background: var(--secondary-gold);
-            color: var(--primary-blue);
-            transform: translateY(-3px);
+        
+        /* Sticky CTA for Mobile */
+        .sticky-cta-mobile {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: none;
         }
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .hero-section h1 {
+        
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-title {
                 font-size: 2.5rem;
             }
-            .hero-section .lead {
+            
+            .hero-subtitle {
                 font-size: 1.2rem;
             }
-            .section-title {
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0 60px;
+                text-align: center;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .trust-indicators {
+                justify-content: center;
+            }
+            
+            .sticky-cta-mobile {
+                display: block;
+            }
+            
+            .step-card {
+                margin-bottom: 2rem;
+            }
+            
+            .table-header, .table-cell {
+                padding: 0.8rem 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
                 font-size: 1.8rem;
+            }
+            
+            .cta-button {
+                padding: 14px 30px;
+                font-size: 1.1rem;
+                width: 100%;
+            }
+            
+            .final-cta {
+                padding: 3rem 1rem;
+                margin: 3rem 0;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar --
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Sticky CTA for Mobile -->
+    <div class="sticky-cta-mobile">
+        <button class="cta-button w-100">
+            <i class="fas fa-shopping-cart"></i> Check Price on Amazon
+        </button>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
         <div class="container">
-            <a class="navbar-brand" href="#"><span>P.S.</span> Energy LLC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#company">Company Details</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section --
-    <section id="home" class="hero-section" data-aos="fade-down">
-        <div class="container">
-            <h1>Global Petroleum Products Buyer & Trader</h1>
-            <p class="lead">P.S. Energy LLC is a verified buyer and trader of premium refined petroleum products including EN590, D6, Jet A1, and other fuels, connecting suppliers with global markets.</p>
-            <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane me-2"></i>Contact for Inquiry</a>
-        </div>
-    </section>
-
-    <!-- About Section --
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About Us</h2>
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h3>CEO: Pushpendra (Pushpinder) Singh Sethi</h3>
-                    <p class="mb-4">A seasoned professional in the petroleum trading industry with extensive experience in sourcing, negotiating, and supplying high-quality fuels across global markets. Verified buyer with a strong network of producers and end-users.</p>
-                    <div class="company-details">
-                        <h5><i class="fas fa-briefcase me-2"></i>Professional Background</h5>
-                        <ul>
-                            <li>CEO of P.S. Energy LLC (Florida, USA)</li>
-                            <li>Education: Brunel University London</li>
-                            <li>British National (Global Citizen)</li>
-                            <li>Active trader in EN590, Jet A1, D6, HSFO, Bitumen, and Coal</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-globe card-icon"></i>
-                            <h4 class="card-title">Global Reach</h4>
-                            <p class="card-text">We facilitate transactions across key global hubs including Rotterdam, Houston, Fujairah, and Singapore, ensuring reliable supply chains and competitive pricing for our partners.</p>
-                            <div class="mt-4">
-                                <div class="d-flex justify-content-around">
-                                    <div><i class="fas fa-ship fa-2x text-primary"></i><p class="mt-2">Marine Fuels</p></div>
-                                    <div><i class="fas fa-gas-pump fa-2x text-primary"></i><p class="mt-2">Aviation Fuel</p></div>
-                                    <div><i class="fas fa-industry fa-2x text-primary"></i><p class="mt-2">Industrial Supply</p></div>
-                                </div>
-                            </div>
+                <div class="col-lg-6">
+                    <h1 class="hero-title fade-in">Sit Longer. Feel More Comfortable. Every Day.</h1>
+                    <p class="hero-subtitle fade-in">Designed for office workers, drivers, and anyone who sits for long hours.</p>
+                    
+                    <button class="cta-button fade-in">
+                        <i class="fas fa-shopping-cart"></i> Check Price on Amazon
+                    </button>
+                    
+                    <div class="trust-indicators fade-in">
+                        <div class="trust-item">
+                            <i class="fas fa-star"></i> 4.5+ Star Rated on Amazon
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shipping-fast"></i> Fast Shipping Available
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-lock"></i> Secure Amazon Checkout
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1258&q=80" alt="Ergonomic Memory Foam Seat Cushion in use" class="img-fluid hero-image fade-in">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Products/Services Section --
-    <section id="products" class="py-5 bg-light">
+    
+    <!-- Problem Awareness Section -->
+    <section class="py-5">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Products We Trade</h2>
+            <h2 class="section-title fade-in">The Problem With Ordinary Sitting</h2>
+            <p class="text-center mb-5 fade-in" style="max-width: 800px; margin: 0 auto;">Long hours of sitting can impact your daily comfort and productivity. Here are common issues people face:</p>
+            
             <div class="row g-4">
-                <!-- Product 1 --
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
-                    <div class="card product-card">
-                        <div class="card-header">EN590 Diesel</div>
-                        <div class="card-body p-4">
-                            <i class="fas fa-oil-can card-icon"></i>
-                            <h5 class="card-title">Ultra-Low Sulfur Diesel (10ppm)</h5>
-                            <p class="card-text">Premium specification diesel fuel meeting EN590 standard (10ppm sulfur). Available FOB Rotterdam, Houston, Fujairah. Quantities: 100,000 MT and above.</p>
-                            <p class="text-muted"><small>Origin: Kazakhstan, Netherlands, USA</small></p>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-chair"></i>
                         </div>
+                        <h4>Discomfort During Long Sessions</h4>
+                        <p>Ordinary chairs and cushions don't provide adequate support for extended sitting periods, leading to discomfort and restlessness.</p>
                     </div>
                 </div>
-                <!-- Product 2 --
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                    <div class="card product-card">
-                        <div class="card-header">Jet A1 Fuel</div>
-                        <div class="card-body p-4">
-                            <i class="fas fa-plane card-icon"></i>
-                            <h5 class="card-title">Aviation Turbine Fuel</h5>
-                            <p class="card-text">Jet A1 meeting international standards. Available FOB Houston, Rotterdam. Quantity: 1-2 million barrels. Platts plus pricing model.</p>
-                            <p class="text-muted"><small>Procedure: ICPO, Commercial Invoice, POP, SGS report</small></p>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-couch"></i>
                         </div>
+                        <h4>Poor Shape Retention</h4>
+                        <p>Regular cushions quickly lose their shape and support, becoming flat and ineffective after just a few weeks of use.</p>
                     </div>
                 </div>
-                <!-- Product 3 --
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
-                    <div class="card product-card">
-                        <div class="card-header">D6 / Virgin Fuel Oil</div>
-                        <div class="card-body p-4">
-                            <i class="fas fa-truck card-icon"></i>
-                            <h5 class="card-title">Heavy Fuel Oil</h5>
-                            <p class="card-text">D6 Virgin Fuel Oil for industrial and marine use. Available from various origins including USA and Middle East. Competitive FOB/CIF terms.</p>
-                            <p class="text-muted"><small>Also trading: HSFO, Bitumen, Coal, Base Oils</small></p>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-clock"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5"
-                <div class="col-12" data-aos="zoom-in">
-                    <div class="alert alert-info">
-                        <h5><i class="fas fa-info-circle me-2"></i>Trading Process</h5>
-                        <p class="mb-0">We operate with full transparency: ICPO (Initial Corporate Purchase Order) → Commercial Invoice → Proof of Product (POP) → SGS Inspection → Payment & Delivery. We welcome serious sellers and buyers with established SOPs.</p>
+                        <h4>Affects Daily Comfort</h4>
+                        <p>Improper sitting posture and lack of support can impact your overall comfort throughout the day, even when you're not sitting.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Company Details Section --
-    <section id="company" class="py-5">
+    
+    <!-- Product Solution Section -->
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Company Verification Details</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto" data-aos="fade-up">
-                    <div class="company-details">
-                        <div class="detail-item">
-                            <div class="detail-label">Company Legal Name</div>
-                            <div>P.S. Energy LLC (Florida Limited Liability Company)</div>
+            <h2 class="section-title fade-in">Engineered For Superior Comfort</h2>
+            <p class="text-center mb-5 fade-in" style="max-width: 800px; margin: 0 auto;">Our ergonomic memory foam seat cushion is designed to transform your sitting experience with premium materials and intelligent design.</p>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1240&q=80" alt="Memory foam cushion top view" class="img-fluid product-image fade-in">
                         </div>
-                        <div class="detail-item">
-                            <div class="detail-label">Document Number / Registration</div>
-                            <div>L13000019622 (Florida Department of State)[reference:0]</div>
+                        <div class="col-6">
+                            <img src="https://images.unsplash.com/photo-1595524288419-a8f8f5a7f006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1240&q=80" alt="Memory foam cushion side view" class="img-fluid product-image fade-in">
                         </div>
-                        <div class="detail-item">
-                            <div class="detail-label">FEI/EIN Number</div>
-                            <div>46-1975638[reference:1]</div>
-                        </div>
-                        <div class="detail-item">
-                            <div class="detail-label">Incorporation Date</div>
-                            <div>February 7, 2013[reference:2]</div>
-                        </div>
-                        <div class="detail-item">
-                            <div class="detail-label">Principal Address</div>
-                            <div>7950 West Mcnab Road Suite 322, Tamarac, FL 33321, USA[reference:3]</div>
-                        </div>
-                        <div class="detail-item">
-                            <div class="detail-label">Registered Agent</div>
-                            <div>Pushpinder S. Sethi (at above address)[reference:4]</div>
-                        </div>
-                        <div class="detail-item">
-                            <div class="detail-label">Status</div>
-                            <div><span class="badge bg-success">ACTIVE</span> Last Annual Report Filed: April 30, 2025[reference:5]</div>
-                        </div>
-                        <div class="detail-item">
-                            <div class="detail-label">Management</div>
-                            <div>Manager: Pushpinder S. Sethi; Manager: Amrit K. Sethi[reference:6]</div>
+                        <div class="col-12">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1352&q=80" alt="Memory foam cushion in use" class="img-fluid product-image fade-in">
                         </div>
                     </div>
-                    <p class="mt-4 text-center text-muted"><small><i class="fas fa-shield-alt me-1"></i>Information verified via Florida Sunbiz Official Records and LinkedIn professional posts.</small></p>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h3 class="mb-4 fade-in">Premium Features For Enhanced Sitting Comfort</h3>
+                    <ul class="benefit-list fade-in">
+                        <li><strong>High-Density Memory Foam:</strong> Contours to your body shape for personalized support and even weight distribution.</li>
+                        <li><strong>Ergonomic U-Shaped Design:</strong> Reduces pressure on sensitive areas for improved sitting comfort.</li>
+                        <li><strong>Breathable, Washable Cover:</strong> Keeps you cool during long sitting sessions and is easy to clean.</li>
+                        <li><strong>Non-Slip Rubber Base:</strong> Stays securely in place on your chair or car seat.</li>
+                        <li><strong>Lightweight & Portable:</strong> Easily move it between your office chair, car seat, or dining chair.</li>
+                        <li><strong>Durable Construction:</strong> Maintains its shape and supportiveness for long-term use.</li>
+                    </ul>
+                    
+                    <div class="mt-4 fade-in">
+                        <button class="cta-button">
+                            <i class="fas fa-shopping-cart"></i> Check Price on Amazon
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section --
-    <section id="contact" class="py-5 bg-light">
+    
+    <!-- How It Works Section -->
+    <section class="py-5">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto" data-aos="zoom-in">
-                    <div class="card">
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-6 contact-info">
-                                    <h5><i class="fas fa-user-tie me-2"></i>Primary Contact</h5>
-                                    <p><strong>Pushpendra (Pushpinder) Singh Sethi</strong><br>CEO, P.S. Energy LLC</p>
-                                    <h5><i class="fas fa-envelope me-2"></i>Email</h5>
-                                    <p><a href="mailto:setcom77@aol.com">setcom77@aol.com</a> (Primary)[reference:7]</p>
-                                    <h5><i class="fas fa-phone me-2"></i>Phone / WhatsApp</h5>
-                                    <p><a href="tel:+19543714540">+1 (954) 371-4540</a> (Direct)[reference:8]</p>
-                                    <p>WhatsApp: Same number</p>
-                                </div>
-                                <div class="col-md-6 contact-info">
-                                    <h5><i class="fas fa-map-marker-alt me-2"></i>Address</h5>
-                                    <p>7950 West Mcnab Road Suite 322<br>Tamarac, FL 33321<br>United States</p>
-                                    <h5><i class="fas fa-clock me-2"></i>Business Hours</h5>
-                                    <p>Mon-Fri: 9:00 AM - 6:00 PM EST<br>Sat: By appointment</p>
-                                    <h5><i class="fas fa-globe-americas me-2"></i>Nationality</h5>
-                                    <p>British (Global Citizen)</p>
-                                </div>
-                            </div>
-                            <div class="text-center mt-4">
-                                <p class="mb-3"><strong>For product inquiries, please provide:</strong> ICPO, quantity, origin, destination, and preferred terms.</p>
-                                <a href="mailto:setcom77@aol.com?subject=Product Inquiry - P.S. Energy LLC" class="btn btn-primary me-3"><i class="fas fa-envelope me-2"></i>Send Email</a>
-                                <a href="https://wa.me/19543714540?text=Hello%20P.S.%20Energy%20LLC,%20I%20have%20an%20inquiry%20about%20petroleum%20products." class="btn btn-success" target="_blank"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
-                            </div>
+            <h2 class="section-title fade-in">Simple Setup, Instant Comfort</h2>
+            <p class="text-center mb-5 fade-in" style="max-width: 800px; margin: 0 auto;">Transform your sitting experience in just three simple steps.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="step-card fade-in">
+                        <div class="step-number">1</div>
+                        <h4>Place On Your Chair</h4>
+                        <p>Simply place the cushion on your office chair, car seat, or any other seating surface. The non-slip base keeps it securely in place.</p>
+                        <div class="mt-3">
+                            <i class="fas fa-chair fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card fade-in">
+                        <div class="step-number">2</div>
+                        <h4>Sit Comfortably</h4>
+                        <p>Sit down and let the memory foam contour to your body shape, providing personalized support exactly where you need it.</p>
+                        <div class="mt-3">
+                            <i class="fas fa-user fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card fade-in">
+                        <div class="step-number">3</div>
+                        <h4>Enjoy Improved Comfort</h4>
+                        <p>Experience enhanced sitting comfort throughout your day, whether you're working, driving, or relaxing at home.</p>
+                        <div class="mt-3">
+                            <i class="fas fa-smile fa-3x text-muted"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-      <!-- Footer --
+    
+    <!-- Who Is This For? -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Who Is This For?</h2>
+            <p class="text-center mb-5 fade-in" style="max-width: 800px; margin: 0 auto;">Our ergonomic cushion is designed for anyone who spends extended periods sitting down.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="audience-card fade-in">
+                        <i class="fas fa-briefcase"></i>
+                        <h5>Office Workers</h5>
+                        <p>Stay comfortable during long hours at your desk</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="audience-card fade-in">
+                        <i class="fas fa-home"></i>
+                        <h5>Remote Workers</h5>
+                        <p>Enhance your home office setup for better productivity</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="audience-card fade-in">
+                        <i class="fas fa-car"></i>
+                        <h5>Drivers</h5>
+                        <p>Make long commutes and road trips more comfortable</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="audience-card fade-in">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h5>Students</h5>
+                        <p>Stay focused during study sessions and online classes</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="audience-card fade-in">
+                        <i class="fas fa-gamepad"></i>
+                        <h5>Gamers</h5>
+                        <p>Support during extended gaming sessions</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="audience-card fade-in">
+                        <i class="fas fa-users"></i>
+                        <h5>Anyone Sitting 6+ Hours</h5>
+                        <p>If you sit for extended periods, this cushion can help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Proof Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title fade-in">What Users Are Saying</h2>
+            <p class="text-center mb-5 fade-in" style="max-width: 800px; margin: 0 auto;">Discover how our ergonomic seat cushion has improved sitting comfort for people like you.</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="review-card fade-in">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Very comfortable for long office hours. I noticed a difference on the first day of using it. The memory foam really contours to your shape."</p>
+                        <div class="mt-3">
+                            <strong>- Alex T.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="review-card fade-in">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Quality is better than expected. The non-slip base actually works, and the cover is easy to remove and wash. Great for both office and car use."</p>
+                        <div class="mt-3">
+                            <strong>- Maria S.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="review-card fade-in">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect for my car seat. I drive for work and this has made a noticeable difference in comfort during long trips. The U-shape design is thoughtful."</p>
+                        <div class="mt-3">
+                            <strong>- James R.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Comparison Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose Our Cushion?</h2>
+            <p class="text-center mb-5 fade-in" style="max-width: 800px; margin: 0 auto;">Compare the features and see how our ergonomic memory foam cushion stands out from regular options.</p>
+            
+            <div class="comparison-table fade-in">
+                <div class="table-row">
+                    <div class="table-cell table-header" style="border-right: 1px solid rgba(255,255,255,0.2);">
+                        Feature
+                    </div>
+                    <div class="table-cell table-header" style="background: var(--teal);">
+                        This Cushion
+                    </div>
+                    <div class="table-cell table-header">
+                        Regular Cushion
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell feature-name">
+                        High-Density Memory Foam
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-check check-mark"></i>
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-times x-mark"></i>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell feature-name">
+                        Long-Term Shape Retention
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-check check-mark"></i>
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-times x-mark"></i>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell feature-name">
+                        Non-Slip Rubber Base
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-check check-mark"></i>
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-times x-mark"></i>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell feature-name">
+                        Washable, Breathable Cover
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-check check-mark"></i>
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-times x-mark"></i>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell feature-name">
+                        Portable & Lightweight
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-check check-mark"></i>
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-check check-mark" style="color: #7f8c8d;"></i>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell feature-name">
+                        Ergonomic U-Shape Design
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-check check-mark"></i>
+                    </div>
+                    <div class="table-cell">
+                        <i class="fas fa-times x-mark"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 fade-in">
+                <button class="cta-button">
+                    <i class="fas fa-shopping-cart"></i> Check Price on Amazon
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="section-title fade-in">Upgrade Your Sitting Comfort Today</h2>
+            <p class="text-center mb-4 fade-in" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
+                Click below to see the current price, read customer reviews, and check availability on Amazon.
+            </p>
+            
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ergonomic Memory Foam Seat Cushion" class="img-fluid rounded" style="max-height: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                </div>
+                <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
+                    <h3 class="mb-4 fade-in">Ready For Enhanced Comfort?</h3>
+                    <p class="mb-4 fade-in">Don't let discomfort distract you from your work, driving, or relaxation. Try our premium ergonomic memory foam seat cushion risk-free with Amazon's reliable customer service and return policy.</p>
+                    
+                    <div class="trust-indicators justify-content-center justify-content-lg-start fade-in">
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle"></i> 30-Day Return Policy
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shipping-fast"></i> Free Shipping Options
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5 fade-in">
+                        <button class="cta-button" style="font-size: 1.3rem; padding: 18px 50px;">
+                            <i class="fas fa-shopping-cart"></i> Check Price on Amazon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h4><span>P.S.</span> Energy LLC</h4>
-                    <p class="mt-3">A verified buyer and trader of refined petroleum products, connecting global suppliers with demand markets since 2013.</p>
-                    <div class="social-icons mt-4">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="color: white;">Ergonomic Seat Cushion</h5>
+                    <p>Premium memory foam seat cushion designed to enhance sitting comfort for office workers, drivers, and anyone who sits for extended periods.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5>Quick Links</h5>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="color: white;">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About CEO</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#company">Company Details</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#">Features</a></li>
+                        <li class="mb-2"><a href="#">Reviews</a></li>
+                        <li class="mb-2"><a href="#">Comparison</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5>Legal & Compliance</h5>
-                    <p><small>P.S. Energy LLC is a duly registered Florida Limited Liability Company in good standing. All trade transactions are subject to standard international commercial terms and due diligence.</small></p>
-                    <p><small>© 2025 P.S. Energy LLC. All rights reserved.</small></p>
+                <div class="col-md-4">
+                    <h5 class="mb-3" style="color: white;">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Disclaimer</a></li>
+                        <li class="mb-2"><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
-            <hr class="mt-4 mb-3" style="border-color: #555;">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p><small>Document Number: L13000019622 | EIN: 46-1975638</small></p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p><small>Last Updated: December 10, 2025 | Information is subject to change</small></p>
-                </div>
+            
+            <div class="disclaimer text-center">
+                <p><strong>Amazon Associate Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases. This means we may receive a small commission if you purchase through our links, at no additional cost to you. We only recommend products we believe in.</p>
+                <p class="mt-2">This site does not provide medical advice. The product is designed for comfort and is not intended to diagnose, treat, cure, or prevent any medical condition.</p>
+                <p class="mt-3">© 2023 Ergonomic Seat Cushion. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
+    
     <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
-        // Initialize AOS animations
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                    // Update active nav link (optional, for Bootstrap 5)
-                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-                    this.classList.add('active');
-                }
+        // Scroll animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // Initial check
+            fadeInOnScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+            
+            // CTA button clicks
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // In a real implementation, this would link to the Amazon product page
+                    // For demonstration, we'll show a message
+                    alert('In a real implementation, this button would direct you to the Amazon product page. Thank you for your interest in our ergonomic seat cushion!');
+                    
+                    // Track conversion (in a real implementation)
+                    console.log('CTA button clicked');
+                });
             });
-        });
-
-        // Navbar background on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.padding = '0.7rem 0';
-                navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
-            } else {
-                navbar.style.padding = '1rem 0';
-                navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.08)';
-            }
+            
+            // Mobile sticky CTA visibility
+            const stickyCTA = document.querySelector('.sticky-cta-mobile');
+            
+            const toggleStickyCTA = function() {
+                if (window.innerWidth <= 768) {
+                    stickyCTA.style.display = 'block';
+                } else {
+                    stickyCTA.style.display = 'none';
+                }
+            };
+            
+            // Initial check
+            toggleStickyCTA();
+            
+            // Check on resize
+            window.addEventListener('resize', toggleStickyCTA);
         });
     </script>
 </body>
-</html>--->
+    </html>
