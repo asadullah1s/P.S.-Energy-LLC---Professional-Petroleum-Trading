@@ -1,10 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMIA GROUP - Professional Petroleum Trading & Commodities</title>
+    <title>SAMIA GROUP - Premium Petroleum Products & Global Commodities Trading</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="SAMIA GROUP - Leading petroleum trading company in Benin Republic specializing in EN590 Diesel, Jet A1, D6, Gold, Sugar, and flexible payment solutions for global markets.">
+    <meta name="keywords" content="petroleum trading, EN590, Diesel D6, Jet A1, Benin Republic, fuel supply, SBLC, MT103, gold trading, sugar ICUMSA 45">
+    <meta name="author" content="SAMIA GROUP SARL">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,71 +16,169 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary-color: #003366; /* Deep blue for petroleum industry */
+            --primary-color: #0A2463; /* Deep professional blue */
             --secondary-color: #FFD700; /* Gold accent */
-            --accent-color: #CC0000; /* Red accent */
+            --accent-color: #C41E3A; /* Red accent */
             --light-color: #F8F9FA;
-            --dark-color: #212529;
+            --dark-color: #1A1A1A;
             --gray-color: #6C757D;
+            --oil-color: #333333;
+            --fuel-color: #FF6B00;
         }
         
         body {
             font-family: 'Open Sans', sans-serif;
             color: var(--dark-color);
             overflow-x: hidden;
+            line-height: 1.6;
         }
         
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-        }
-        
-        .navbar-brand {
             font-weight: 700;
-            font-size: 1.8rem;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 600;
             color: var(--primary-color) !important;
+            margin: 0 10px;
+            position: relative;
+            padding: 8px 0;
         }
         
-        .navbar-brand span {
-            color: var(--secondary-color);
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--secondary-color);
+            transition: width 0.3s ease;
         }
         
+        .navbar-nav .nav-link:hover:after,
+        .navbar-nav .nav-link.active:after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
         .hero-section {
-            background: linear-gradient(rgba(0, 30, 60, 0.85), rgba(0, 30, 60, 0.9)), url('https://images.unsplash.com/photo-1589923186741-b7d59d6b2c4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background: linear-gradient(rgba(10, 36, 99, 0.9), rgba(10, 36, 99, 0.85)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: white;
-            padding: 150px 0 100px;
+            padding: 180px 0 120px;
             position: relative;
+            overflow: hidden;
         }
         
         .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
+            font-size: 3.8rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
         }
         
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 35px;
+            opacity: 0.9;
         }
         
+        /* Animated Elements */
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
+        
+        /* Oil Drop Animation */
+        .oil-drop {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle at 30% 30%, var(--fuel-color), var(--oil-color));
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            opacity: 0.3;
+            animation: oilDropFloat 8s ease-in-out infinite;
+        }
+        
+        .oil-drop:nth-child(1) {
+            top: 15%;
+            left: 10%;
+            animation-delay: 0s;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .oil-drop:nth-child(2) {
+            top: 25%;
+            right: 15%;
+            animation-delay: 2s;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .oil-drop:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+            width: 70px;
+            height: 70px;
+        }
+        
+        @keyframes oilDropFloat {
+            0% { transform: translateY(0) rotate(0deg); }
+            33% { transform: translateY(-30px) rotate(120deg); }
+            66% { transform: translateY(15px) rotate(240deg); }
+            100% { transform: translateY(0) rotate(360deg); }
+        }
+        
+        /* Section Styling */
         .section-title {
             color: var(--primary-color);
             position: relative;
-            padding-bottom: 15px;
-            margin-bottom: 40px;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
         }
         
         .section-title:after {
@@ -84,9 +186,9 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 80px;
-            height: 3px;
-            background-color: var(--secondary-color);
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
         }
         
         .section-title.center:after {
@@ -94,215 +196,315 @@
             transform: translateX(-50%);
         }
         
+        /* Cards */
         .card {
             border: none;
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
             height: 100%;
         }
         
         .card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-card {
+            border-top: 5px solid var(--primary-color);
+        }
+        
+        .payment-card {
+            border-top: 5px solid var(--secondary-color);
         }
         
         .card-icon {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: var(--primary-color);
             margin-bottom: 20px;
         }
         
-        .product-card {
-            border-top: 4px solid var(--primary-color);
-        }
-        
-        .payment-card {
-            border-top: 4px solid var(--secondary-color);
-        }
-        
+        /* Buttons */
         .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            padding: 12px 30px;
+            background: linear-gradient(135deg, var(--primary-color), #1a3a8f);
+            border: none;
+            padding: 14px 35px;
             font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
         }
         
         .btn-primary:hover {
-            background-color: #002244;
-            border-color: #002244;
+            background: linear-gradient(135deg, #1a3a8f, var(--primary-color));
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(10, 36, 99, 0.2);
         }
         
         .btn-secondary {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
-            color: var(--dark-color);
-            padding: 12px 30px;
+            background: linear-gradient(135deg, var(--secondary-color), #ffed4e);
+            border: none;
+            padding: 14px 35px;
             font-weight: 600;
+            border-radius: 50px;
+            color: var(--dark-color);
+            transition: all 0.3s ease;
         }
         
         .btn-secondary:hover {
-            background-color: #e6c200;
-            border-color: #e6c200;
+            background: linear-gradient(135deg, #ffed4e, var(--secondary-color));
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
             color: var(--dark-color);
         }
         
+        /* CEO Section */
         .ceo-section {
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            padding: 30px;
+            background: linear-gradient(135deg, rgba(10, 36, 99, 0.03), rgba(255, 215, 0, 0.03));
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ceo-section:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0) 70%);
+            z-index: 0;
         }
         
         .ceo-photo {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 8px solid white;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            z-index: 1;
+            position: relative;
         }
         
-        .flag-icon {
-            width: 30px;
-            height: auto;
-            margin-right: 10px;
+        /* Stats */
+        .stat-box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
         }
         
-        .contact-info-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
+        .stat-box:hover {
+            transform: translateY(-10px);
         }
         
-        .contact-icon {
-            background-color: var(--primary-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        
+        /* Contact Form */
+        .contact-form .form-control {
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-form .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(10, 36, 99, 0.1);
+        }
+        
+        /* Social Media */
+        .social-icon {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin-right: 15px;
-            flex-shrink: 0;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            margin-right: 10px;
+            transition: all 0.3s ease;
         }
         
+        .social-icon:hover {
+            background: var(--secondary-color);
+            color: var(--dark-color);
+            transform: translateY(-5px);
+        }
+        
+        /* Footer */
         .footer {
             background-color: var(--primary-color);
             color: white;
-            padding: 60px 0 30px;
+            padding: 80px 0 30px;
         }
         
-        .footer a {
+        .footer-links a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            display: block;
+            margin-bottom: 10px;
         }
         
-        .footer a:hover {
+        .footer-links a:hover {
             color: var(--secondary-color);
+            padding-left: 5px;
         }
         
         .copyright {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 20px;
-            margin-top: 40px;
+            padding-top: 25px;
+            margin-top: 50px;
             text-align: center;
             color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
         }
         
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
-        .stat-label {
-            font-size: 1.1rem;
-            color: var(--gray-color);
-        }
-        
-        .company-logo {
-            height: 60px;
-            width: auto;
-        }
-        
-        .map-container {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-        
-        .timeline:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background-color: var(--primary-color);
-        }
-        
-        .timeline-item {
-            position: relative;
-            margin-bottom: 30px;
-        }
-        
-        .timeline-item:before {
-            content: '';
-            position: absolute;
-            left: -36px;
-            top: 5px;
-            width: 15px;
-            height: 15px;
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 55px;
+            height: 55px;
+            background: var(--primary-color);
+            color: white;
             border-radius: 50%;
-            background-color: var(--secondary-color);
-            border: 3px solid var(--primary-color);
-        }
-        
-        .floating-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        .pulse-animation {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        .fade-in-up {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            text-decoration: none;
+            z-index: 1000;
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
-        .fade-in-up.visible {
+        .back-to-top.active {
             opacity: 1;
-            transform: translateY(0);
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            color: var(--dark-color);
+            transform: translateY(-5px);
+        }
+        
+        /* Fuel Animation */
+        .fuel-animation {
+            position: relative;
+            height: 100px;
+            width: 100%;
+            overflow: hidden;
+            margin: 30px 0;
+        }
+        
+        .fuel-drop {
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            background: linear-gradient(to bottom, var(--fuel-color), var(--secondary-color));
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            opacity: 0.8;
+            animation: fuelFall 3s linear infinite;
+        }
+        
+        @keyframes fuelFall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 0.8; }
+            100% { transform: translateY(100px) rotate(360deg); opacity: 0; }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .ceo-photo {
+                width: 180px;
+                height: 180px;
+            }
+        }
+        
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 65px;
+            height: 65px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/22890721822?text=Hello%20SAMIA%20GROUP%2C%20I%20am%20interested%20in%20your%20petroleum%20products" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-gas-pump me-2"></i>SAMIA<span>GROUP</span>
+            <a class="navbar-brand" href="#home">
+                <img src="images/logo.png" alt="SAMIA GROUP Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -310,7 +512,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -319,7 +521,7 @@
                         <a class="nav-link" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#payment">Payment Methods</a>
+                        <a class="nav-link" href="#payment">Payment</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#ceo">CEO</a>
@@ -328,27 +530,56 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <a href="#contact" class="btn btn-primary ms-lg-3 mt-3 mt-lg-0">Get Quote</a>
+                <a href="#contact" class="btn btn-primary ms-lg-4 mt-3 mt-lg-0 pulse">Get Quote</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
+        <!-- Animated Oil Drops -->
+        <div class="oil-drop"></div>
+        <div class="oil-drop"></div>
+        <div class="oil-drop"></div>
+        
+        <!-- Fuel Animation -->
+        <div class="fuel-animation d-none d-lg-block">
+            <div class="fuel-drop" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="fuel-drop" style="left: 25%; animation-delay: 0.5s;"></div>
+            <div class="fuel-drop" style="left: 40%; animation-delay: 1s;"></div>
+            <div class="fuel-drop" style="left: 60%; animation-delay: 1.5s;"></div>
+            <div class="fuel-drop" style="left: 75%; animation-delay: 2s;"></div>
+            <div class="fuel-drop" style="left: 90%; animation-delay: 2.5s;"></div>
+        </div>
+        
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h1 class="hero-title">Global Petroleum & Commodities Trading</h1>
-                    <p class="lead mb-4">SAMIA GROUP specializes in the supply and distribution of premium petroleum products and commodities across Africa, America, Asia, Europe, and the Middle East.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#contact" class="btn btn-secondary pulse-animation">Contact Now <i class="fas fa-arrow-right ms-2"></i></a>
-                        <a href="#products" class="btn btn-outline-light">Our Products</a>
+                <div class="col-lg-6">
+                    <h1 class="hero-title animate__animated animate__fadeInDown">Global Petroleum Trading & Commodities Supply</h1>
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">SAMIA GROUP specializes in premium EN590 Diesel, Jet A1, D6, Gold, Sugar and flexible payment solutions for markets across Africa, Europe, Asia, America & Middle East.</p>
+                    
+                    <div class="mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#contact" class="btn btn-secondary">Request Quote <i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="#products" class="btn btn-outline-light">View Products</a>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center text-white">
+                                <div class="me-3">
+                                    <i class="fas fa-check-circle text-warning"></i>
+                                </div>
+                                <div>
+                                    <small>Verified Supplier | RCCM: RB/ABC/24 B7687 | IFU: 3202414945211</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6">
                     <div class="text-center mt-5 mt-lg-0">
-                        <div class="floating-animation">
-                            <i class="fas fa-globe-africa" style="font-size: 15rem; color: rgba(255, 255, 255, 0.2);"></i>
+                        <div class="floating-element">
+                            <i class="fas fa-gas-pump" style="font-size: 12rem; color: rgba(255, 215, 0, 0.3);"></i>
                         </div>
                     </div>
                 </div>
@@ -359,22 +590,30 @@
     <!-- Stats Section -->
     <section class="py-5 bg-light">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3 col-6 mb-4" data-aos="fade-up">
-                    <div class="stat-number">100M+</div>
-                    <div class="stat-label">Annual Revenue (USD)</div>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-box">
+                        <div class="stat-number">100M+</div>
+                        <div class="stat-label">USD Annual Revenue</div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Years Experience</div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-box">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Global Partners</div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Global Partners</div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-number">7</div>
-                    <div class="stat-label">Products Categories</div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-box">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -384,66 +623,101 @@
     <section id="about" class="py-5">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-8 mx-auto text-center">
+                <div class="col-lg-10 mx-auto">
                     <h2 class="section-title center">About SAMIA GROUP</h2>
-                    <p class="lead">A leading commodities trading company headquartered in Benin Republic, West Africa, with a commitment to quality, reliability, and efficiency in global trade.</p>
+                    <p class="text-center lead">A leading commodities trading company headquartered in Benin Republic, West Africa, established in 2020 with commitment to quality, reliability, and efficiency in global trade.</p>
                 </div>
             </div>
             
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h3 class="mb-4">Our Expertise in Global Trade</h3>
-                    <p>SAMIA GROUP is a premier commodities trading company established in 2020, specializing in the supply and distribution of petroleum products and essential commodities worldwide.</p>
-                    <p>With our strategic location in Benin Republic - a major trade hub connecting Africa, Europe, America and the Middle East - we ensure seamless transactions and uninterrupted supply to our partners.</p>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Global Petroleum & Commodities Trading Experts</h3>
+                    <p class="mb-4">SAMIA GROUP has positioned itself as a key player in the international trading sector, ensuring seamless transactions and uninterrupted fuel and commodities supply to partners worldwide.</p>
                     
-                    <div class="mt-4">
-                        <h5 class="mb-3"><i class="fas fa-map-marker-alt text-primary me-2"></i> Company Details</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><strong>Full Name:</strong> SAMIA GROUP SARL</li>
-                            <li class="mb-2"><strong>Incorporation:</strong> 18/01/2024</li>
-                            <li class="mb-2"><strong>Registration:</strong> RCCM No RB/ABC/24 B7687</li>
-                            <li class="mb-2"><strong>IFU:</strong> 3202414945211</li>
-                            <li class="mb-2"><strong>Address:</strong> N°03, Cité, Ouedo Centre, Abomey-Calavi, Benin Republic</li>
-                        </ul>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-shield-alt text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Verified & Certified</h5>
+                                    <p class="small">Fully registered with Benin Republic authorities and international trade compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-globe-africa text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Global Network</h5>
+                                    <p class="small">Strong partnerships with refineries, storage facilities, and shipping partners worldwide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-bolt text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Fast Execution</h5>
+                                    <p class="small">Optimized supply chains for timely delivery and competitive pricing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-handshake text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Trusted Partner</h5>
+                                    <p class="small">Proven track record with successful contracts across multiple regions.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                
+                <div class="col-lg-6 mt-5 mt-lg-0">
                     <div class="card border-0">
                         <div class="card-body p-4">
-                            <h4 class="card-title mb-4">Our Core Values</h4>
-                            <div class="d-flex mb-4">
-                                <div class="me-4">
-                                    <div class="card-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h5>Transparency</h5>
-                                    <p>Every transaction is handled with integrity and full compliance with international trade regulations.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-4">
-                                <div class="me-4">
-                                    <div class="card-icon">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h5>Efficiency</h5>
-                                    <p>We ensure fast execution and optimized supply chains for timely delivery of products.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div class="me-4">
-                                    <div class="card-icon">
-                                        <i class="fas fa-leaf"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h5>Sustainability</h5>
-                                    <p>We work towards reducing carbon footprints with cleaner fuel solutions and sustainable practices.</p>
-                                </div>
-                            </div>
+                            <h4 class="card-title mb-4">Company Information</h4>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th width="40%">Full Name:</th>
+                                        <td>SAMIA GROUP SARL</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Incorporation Date:</th>
+                                        <td>18/01/2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Registration:</th>
+                                        <td>RCCM No RB/ABC/24 B7687</td>
+                                    </tr>
+                                    <tr>
+                                        <th>IFU Number:</th>
+                                        <td>3202414945211</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Location:</th>
+                                        <td>Benin Republic, West Africa</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address:</th>
+                                        <td>N°03, Cité, Ouedo Centre, Abomey-Calavi</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Activity:</th>
+                                        <td>Petroleum Trading & General Mechanics</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -456,85 +730,145 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title center">Our Products</h2>
-                    <p class="lead">We specialize in high-quality petroleum products and essential commodities for global markets.</p>
+                    <h2 class="section-title center">Our Premium Products</h2>
+                    <p class="lead">High-quality petroleum products and essential commodities for global markets</p>
                 </div>
             </div>
             
             <div class="row g-4">
                 <!-- Petroleum Products -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="col-lg-6">
                     <div class="card product-card h-100">
                         <div class="card-body p-4">
                             <div class="text-center mb-4">
-                                <i class="fas fa-oil-can card-icon"></i>
+                                <i class="fas fa-gas-pump card-icon"></i>
+                                <h4 class="card-title">Petroleum Products</h4>
                             </div>
-                            <h4 class="card-title text-center mb-3">Petroleum Products</h4>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Diesel (EN590 10ppm, 50ppm, 500ppm)</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Jet Fuel A1</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Gasoline (PMS 91, 95, 98)</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Aviation Kerosen JP54</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Fuel Oil, LPG & LNG</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Urea 46%</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Bitumen</li>
-                            </ul>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fas fa-check-circle text-success mt-1 me-2"></i>
+                                                <div>
+                                                    <strong>Diesel EN590</strong>
+                                                    <p class="small mb-0">10ppm, 50ppm, 500ppm specifications</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fas fa-check-circle text-success mt-1 me-2"></i>
+                                                <div>
+                                                    <strong>Jet Fuel A1</strong>
+                                                    <p class="small mb-0">Aviation turbine fuel</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fas fa-check-circle text-success mt-1 me-2"></i>
+                                                <div>
+                                                    <strong>Gasoline</strong>
+                                                    <p class="small mb-0">PMS 91, 95, 98 octane</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fas fa-check-circle text-success mt-1 me-2"></i>
+                                                <div>
+                                                    <strong>Aviation Kerosen JP54</strong>
+                                                    <p class="small mb-0">Jet propulsion fuel</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fas fa-check-circle text-success mt-1 me-2"></i>
+                                                <div>
+                                                    <strong>Fuel Oil, LPG & LNG</strong>
+                                                    <p class="small mb-0">Various specifications available</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start">
+                                                <i class="fas fa-check-circle text-success mt-1 me-2"></i>
+                                                <div>
+                                                    <strong>Urea 46% & Bitumen</strong>
+                                                    <p class="small mb-0">Industrial and construction materials</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Other Commodities -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
                     <div class="card product-card h-100">
                         <div class="card-body p-4">
                             <div class="text-center mb-4">
                                 <i class="fas fa-boxes card-icon"></i>
+                                <h4 class="card-title">Other Commodities</h4>
                             </div>
-                            <h4 class="card-title text-center mb-3">Other Commodities</h4>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Sugar ICUMSA 45</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Gold Bars (AU)</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Sunflower Oil</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Rice</li>
-                            </ul>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="text-center mb-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-gem fa-3x text-warning"></i>
+                                        </div>
+                                        <h5>Gold Bars (AU)</h5>
+                                        <p class="small">Investment grade gold with proper certification</p>
+                                    </div>
+                                    
+                                    <div class="text-center">
+                                        <div class="mb-3">
+                                            <i class="fas fa-wheat-alt fa-3x text-success"></i>
+                                        </div>
+                                        <h5>Sunflower Oil</h5>
+                                        <p class="small">Premium edible oil for food industry</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="text-center mb-4">
+                                        <div class="mb-3">
+                                            <i class="fas fa-cube fa-3x text-danger"></i>
+                                        </div>
+                                        <h5>Sugar ICUMSA 45</h5>
+                                        <p class="small">High-quality refined sugar for global markets</p>
+                                    </div>
+                                    
+                                    <div class="text-center">
+                                        <div class="mb-3">
+                                            <i class="fas fa-seedling fa-3x text-info"></i>
+                                        </div>
+                                        <h5>Rice</h5>
+                                        <p class="small">Premium quality rice for food security</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="mt-4">
-                                <h6 class="text-primary">Industries We Serve</h6>
+                                <h6 class="text-primary">Industries We Serve:</h6>
                                 <div class="d-flex flex-wrap gap-2 mt-2">
-                                    <span class="badge bg-primary">Aviation</span>
-                                    <span class="badge bg-primary">Maritime</span>
-                                    <span class="badge bg-primary">Logistics</span>
-                                    <span class="badge bg-primary">Energy Production</span>
-                                    <span class="badge bg-primary">Manufacturing</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Why Choose Us -->
-                <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card product-card h-100">
-                        <div class="card-body p-4">
-                            <div class="text-center mb-4">
-                                <i class="fas fa-award card-icon"></i>
-                            </div>
-                            <h4 class="card-title text-center mb-3">Why Choose SAMIA GROUP</h4>
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <h6>Proven Track Record</h6>
-                                    <p class="small">Successfully delivering fuel contracts across multiple regions with 100% customer satisfaction.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h6>Strategic Location</h6>
-                                    <p class="small">Based in Benin Republic, a major trade hub connecting Africa, Europe, America and the Middle East.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h6>Reliable Supply Chain</h6>
-                                    <p class="small">Strong partnerships with top-tier refineries and storage facilities worldwide.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h6>Quality Assurance</h6>
-                                    <p class="small">All products meet international quality standards with proper documentation and certification.</p>
+                                    <span class="badge bg-primary p-2">Aviation</span>
+                                    <span class="badge bg-primary p-2">Maritime</span>
+                                    <span class="badge bg-primary p-2">Logistics</span>
+                                    <span class="badge bg-primary p-2">Energy Production</span>
+                                    <span class="badge bg-primary p-2">Manufacturing</span>
+                                    <span class="badge bg-primary p-2">Agriculture</span>
                                 </div>
                             </div>
                         </div>
@@ -550,54 +884,54 @@
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title center">Flexible Payment Solutions</h2>
-                    <p class="lead">We offer innovative and flexible payment terms tailored to global trade complexities.</p>
+                    <p class="lead">Innovative payment terms tailored for global trade complexities</p>
                 </div>
             </div>
             
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                <div class="col-lg-3 col-md-6">
                     <div class="card payment-card h-100 text-center">
                         <div class="card-body p-4">
-                            <div class="mb-3">
-                                <i class="fas fa-file-invoice-dollar fa-3x text-primary"></i>
+                            <div class="mb-4">
+                                <i class="fas fa-file-invoice-dollar fa-4x text-primary"></i>
                             </div>
-                            <h5 class="card-title">SBLC</h5>
-                            <p class="card-text">Standby Letter of Credit – Confirmed & Irrevocable for secure transactions.</p>
+                            <h5 class="card-title mb-3">SBLC</h5>
+                            <p class="card-text">Standby Letter of Credit – Confirmed & Irrevocable for maximum security in transactions.</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3 col-md-6">
                     <div class="card payment-card h-100 text-center">
                         <div class="card-body p-4">
-                            <div class="mb-3">
-                                <i class="fas fa-exchange-alt fa-3x text-primary"></i>
+                            <div class="mb-4">
+                                <i class="fas fa-exchange-alt fa-4x text-primary"></i>
                             </div>
-                            <h5 class="card-title">MT103/72</h5>
-                            <p class="card-text">Conditional Payment through bank wire transfers with secure messaging.</p>
+                            <h5 class="card-title mb-3">MT103/72</h5>
+                            <p class="card-text">Conditional Payment through secure bank wire transfers with real-time tracking.</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-3 col-md-6">
                     <div class="card payment-card h-100 text-center">
                         <div class="card-body p-4">
-                            <div class="mb-3">
-                                <i class="fas fa-search-dollar fa-3x text-primary"></i>
+                            <div class="mb-4">
+                                <i class="fas fa-search-dollar fa-4x text-primary"></i>
                             </div>
-                            <h5 class="card-title">DIP & PAY</h5>
-                            <p class="card-text">Secure Payment After Inspection to ensure product quality before payment.</p>
+                            <h5 class="card-title mb-3">DIP & PAY</h5>
+                            <p class="card-text">Secure Payment After Inspection to guarantee product quality before transaction completion.</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-md-6">
                     <div class="card payment-card h-100 text-center">
                         <div class="card-body p-4">
-                            <div class="mb-3">
-                                <i class="fas fa-file-contract fa-3x text-primary"></i>
+                            <div class="mb-4">
+                                <i class="fas fa-file-contract fa-4x text-primary"></i>
                             </div>
-                            <h5 class="card-title">Documentary L/C</h5>
+                            <h5 class="card-title mb-3">Documentary L/C</h5>
                             <p class="card-text">Documentary Letters of Credit – Confirmed & Payable at Sight for immediate settlement.</p>
                         </div>
                     </div>
@@ -605,11 +939,18 @@
             </div>
             
             <div class="row mt-5">
-                <div class="col-lg-8 mx-auto text-center">
+                <div class="col-lg-10 mx-auto">
                     <div class="card border-0 bg-primary text-white">
-                        <div class="card-body p-4">
-                            <h4 class="mb-3"><i class="fas fa-lightbulb me-2"></i> Unique Financial Advantage</h4>
-                            <p class="mb-0">SAMIA GROUP is the only company in West Africa offering such flexible client-centric payment solutions, enabling effective cash flow management and financial risk mitigation.</p>
+                        <div class="card-body p-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center">
+                                    <i class="fas fa-lightbulb fa-4x text-warning"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <h4 class="mb-3">Unique Financial Advantage</h4>
+                                    <p class="mb-0">SAMIA GROUP is the only company in West Africa offering such flexible client-centric payment solutions. This adaptability enables our clients to manage cash flow effectively, mitigate financial risks, and secure their fuel supplies with confidence.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -623,48 +964,63 @@
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title center">Chief Executive Officer</h2>
-                    <p class="lead">Meet James Jaures R. SOGBOSSI, the visionary leader of SAMIA GROUP.</p>
+                    <p class="lead">Meet James Jaures R. SOGBOSSI, the visionary leader of SAMIA GROUP</p>
                 </div>
             </div>
             
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="ceo-section" data-aos="fade-up">
+                <div class="col-lg-10 mx-auto">
+                    <div class="ceo-section">
                         <div class="row align-items-center">
-                            <div class="col-md-4 text-center mb-4 mb-md-0">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="James Jaures R. SOGBOSSI" class="ceo-photo">
-                                <div class="mt-3">
-                                    <h5 class="mb-0">James Jaures R. SOGBOSSI</h5>
-                                    <p class="text-muted">CEO & Founder</p>
+                            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                <img src="images/James.png" alt="James Jaures R. SOGBOSSI" class="ceo-photo">
+                                <div class="mt-4">
+                                    <h4 class="mb-1">James Jaures R. SOGBOSSI</h4>
+                                    <p class="text-muted mb-3">CEO & Founder</p>
+                                    
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://www.linkedin.com/in/james-jaures-sogbossi" class="social-icon" target="_blank">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="https://twitter.com/JauresSogbossi" class="social-icon" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/jaures.sogbossi" class="social-icon" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <h4 class="mb-3">Professional Profile</h4>
-                                <p>As the founder and CEO of SAMIA GROUP, James Jaures R. SOGBOSSI brings extensive expertise in international commodities trading with a focus on petroleum products and strategic business development across global markets.</p>
-                                
-                                <div class="row mt-4">
-                                    <div class="col-sm-6">
-                                        <h6><i class="fas fa-user me-2 text-primary"></i> Personal Details</h6>
-                                        <ul class="list-unstyled">
-                                            <li class="mb-1"><strong>Date of Birth:</strong> 01/01/1983</li>
-                                            <li class="mb-1"><strong>Nationality:</strong> Benin</li>
-                                            <li class="mb-1"><strong>Languages:</strong> English, French, Chinese</li>
-                                        </ul>
+                            
+                            <div class="col-lg-8">
+                                <div class="ps-lg-4">
+                                    <h4 class="mb-4">Professional Profile</h4>
+                                    <p>James Jaures R. SOGBOSSI is an accomplished commodities trading expert with extensive experience in international petroleum markets. As the founder and CEO of SAMIA GROUP, he has successfully positioned the company as a trusted partner in global trade with a focus on petroleum products and strategic business development.</p>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6 mb-3">
+                                            <h6><i class="fas fa-user me-2 text-primary"></i> Personal Details</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-1"><strong>Date of Birth:</strong> 01/01/1983</li>
+                                                <li class="mb-1"><strong>Nationality:</strong> Benin</li>
+                                                <li class="mb-1"><strong>Languages:</strong> English, French, Chinese</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <h6><i class="fas fa-passport me-2 text-primary"></i> Passport Details</h6>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-1"><strong>Passport No:</strong> 22PP74439</li>
+                                                <li class="mb-1"><strong>Issued:</strong> 29/11/2022</li>
+                                                <li class="mb-1"><strong>Expires:</strong> 29/11/2028</li>
+                                                <li class="mb-1"><strong>Country:</strong> Benin Republic</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <h6><i class="fas fa-passport me-2 text-primary"></i> Passport Details</h6>
-                                        <ul class="list-unstyled">
-                                            <li class="mb-1"><strong>Passport No:</strong> 22PP74439</li>
-                                            <li class="mb-1"><strong>Issued:</strong> 29/11/2022</li>
-                                            <li class="mb-1"><strong>Expires:</strong> 29/11/2028</li>
-                                            <li class="mb-1"><strong>Country:</strong> Benin Republic</li>
-                                        </ul>
+                                    
+                                    <div class="mt-4">
+                                        <h6><i class="fas fa-award me-2 text-primary"></i> Professional Experience</h6>
+                                        <p>With over 5 years of investment experience in commodities trading, James has developed a deep understanding of global petroleum markets, supply chain logistics, and international trade finance. His leadership has been instrumental in establishing SAMIA GROUP's reputation for reliability and excellence in the industry.</p>
                                     </div>
-                                </div>
-                                
-                                <div class="mt-3">
-                                    <h6><i class="fas fa-graduation-cap me-2 text-primary"></i> Professional Qualifications</h6>
-                                    <p>With over 5 years of investment experience in commodities trading, James has successfully positioned SAMIA GROUP as a trusted partner in the global petroleum industry through strategic partnerships and customer-centric approaches.</p>
                                 </div>
                             </div>
                         </div>
@@ -680,41 +1036,73 @@
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title center">Banking Information</h2>
-                    <p class="lead">Secure and verified banking partners for international transactions.</p>
+                    <p class="lead">Secure and verified banking partners for international transactions</p>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
+            <div class="row g-4">
+                <div class="col-lg-6">
                     <div class="card h-100">
                         <div class="card-body p-4">
-                            <h4 class="card-title mb-4">Primary Bank</h4>
-                            <h5 class="text-primary">Banque Internationale pour l'Industrie et le Commerce - BIIC BENIN</h5>
-                            <ul class="list-unstyled mt-3">
-                                <li class="mb-2"><strong>Address:</strong> Lot N°34 Parcelle C, Boulevard St Michel, Cotonou, Benin Republic</li>
-                                <li class="mb-2"><strong>Account Number:</strong> 000208374101</li>
-                                <li class="mb-2"><strong>SWIFT Code:</strong> AFICBJBJ</li>
-                                <li class="mb-2"><strong>IBAN:</strong> BJ66 BJ18 5011 0000 0208 3741 0130</li>
-                                <li class="mb-2"><strong>Account Signatory:</strong> Jaures R. SOGBOSSI</li>
-                                <li class="mb-2"><strong>Account Manager:</strong> Mrs. Judith ADEBI</li>
-                                <li><strong>Email:</strong> judith.adebi@btic-bank.com</li>
-                            </ul>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fas fa-university fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="card-title mb-0">Primary Bank</h5>
+                                    <p class="text-muted mb-0">Banque Internationale pour l'Industrie et le Commerce - BIIC BENIN</p>
+                                </div>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th width="35%">Address:</th>
+                                            <td>Lot N°34 Parcelle C, Boulevard St Michel, Cotonou, Benin Republic</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Account Number:</th>
+                                            <td>000208374101</td>
+                                        </tr>
+                                        <tr>
+                                            <th>SWIFT Code:</th>
+                                            <td>AFICBJBJ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>IBAN:</th>
+                                            <td>BJ66 BJ18 5011 0000 0208 3741 0130</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Account Signatory:</th>
+                                            <td>Jaures R. SOGBOSSI</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Account Manager:</th>
+                                            <td>Mrs. Judith ADEBI</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Manager Email:</th>
+                                            <td>judith.adebi@btic-bank.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6">
                     <div class="card h-100">
                         <div class="card-body p-4">
-                            <h4 class="card-title mb-4">Bank Identity Statement (RIB)</h4>
-                            <div class="table-responsive">
+                            <h5 class="card-title mb-4">Bank Identity Statement (RIB)</h5>
+                            
+                            <div class="table-responsive mb-4">
                                 <table class="table table-bordered">
                                     <thead class="table-primary">
                                         <tr>
-                                            <th>Bank</th>
-                                            <th>Agency</th>
-                                            <th>Account</th>
-                                            <th>Key</th>
+                                            <th>Bank Code</th>
+                                            <th>Agency Code</th>
+                                            <th>Account Number</th>
+                                            <th>RIB Key</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -728,15 +1116,15 @@
                                 </table>
                             </div>
                             
-                            <div class="mt-4">
-                                <h5>Profit Payment Account</h5>
+                            <div class="mb-4">
+                                <h6>Profit Payment Account</h6>
                                 <p class="mb-1"><strong>Bank:</strong> Attijariwafa Bank Europe</p>
                                 <p class="mb-1"><strong>Account Number:</strong> 000208374101</p>
                                 <p class="mb-1"><strong>SWIFT Code:</strong> AFICBJBJ</p>
                                 <p class="mb-0"><strong>IBAN:</strong> BJ66 BJ18 5011 0000 0208 3741 0130</p>
                             </div>
                             
-                            <div class="alert alert-info mt-4">
+                            <div class="alert alert-info">
                                 <i class="fas fa-info-circle me-2"></i>
                                 <small>Please provide this banking information to any organization needing your bank references for wire transfers or direct debits to avoid errors or delays.</small>
                             </div>
@@ -753,68 +1141,93 @@
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title center">Contact Us</h2>
-                    <p class="lead">Get in touch with us for partnerships, inquiries, or bulk fuel supply.</p>
+                    <p class="lead">Get in touch for partnerships, inquiries, or bulk fuel supply</p>
                 </div>
             </div>
             
             <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="col-lg-5 mb-5 mb-lg-0">
                     <h4 class="mb-4">Contact Information</h4>
                     
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="social-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
                         </div>
-                        <div>
+                        <div class="flex-grow-1 ms-3">
                             <h6>Registered Address</h6>
-                            <p>N°03, Cité, Ouedo Centre,<br>Abomey-Calavi, Benin Republic<br>West Africa</p>
+                            <p class="mb-0">N°03, Cité, Ouedo Centre<br>Abomey-Calavi, Benin Republic<br>West Africa</p>
                         </div>
                     </div>
                     
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="social-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
                         </div>
-                        <div>
+                        <div class="flex-grow-1 ms-3">
                             <h6>Phone Numbers</h6>
-                            <p>Mobile: +2290196861310<br>WhatsApp: +22890721822</p>
+                            <p class="mb-0">Mobile: +229 01 9686 1310<br>WhatsApp: +228 9072 1822</p>
                         </div>
                     </div>
                     
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="social-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
                         </div>
-                        <div>
+                        <div class="flex-grow-1 ms-3">
                             <h6>Email Address</h6>
-                            <p>samiasarl2020@gmail.com</p>
+                            <p class="mb-0">samiasarl2020@gmail.com</p>
                         </div>
                     </div>
                     
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-building"></i>
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="social-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
                         </div>
-                        <div>
+                        <div class="flex-grow-1 ms-3">
                             <h6>Business Hours</h6>
-                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+                            <p class="mb-0">Monday - Friday: 8:00 AM - 6:00 PM GMT<br>Saturday: 9:00 AM - 1:00 PM GMT</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h6 class="mb-3">Connect With Us</h6>
+                        <div class="d-flex">
+                            <a href="https://www.linkedin.com/company/samia-group" class="social-icon" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/SamiaGroup" class="social-icon" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/SamiaGroupBenin" class="social-icon" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/samiagroup" class="social-icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                     
                     <div class="mt-4">
-                        <h6>Follow Us</h6>
-                        <div class="d-flex gap-3 mt-2">
-                            <a href="#" class="text-primary"><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a href="#" class="text-primary"><i class="fab fa-twitter fa-2x"></i></a>
-                            <a href="#" class="text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+                        <div class="card border-0 bg-primary text-white">
+                            <div class="card-body p-3">
+                                <p class="mb-0 small"><i class="fas fa-exclamation-circle me-2"></i> All social media accounts are verified and regularly updated with company news and industry insights.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-8" data-aos="fade-left">
-                    <div class="card border-0 shadow">
-                        <div class="card-body p-4">
-                            <h4 class="mb-4">Send Us a Message</h4>
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4 p-md-5">
+                            <h4 class="mb-4">Send Inquiry</h4>
                             <form id="contactForm">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -828,8 +1241,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="phone" class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="company" class="form-label">Company Name</label>
@@ -837,23 +1250,37 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="product" class="form-label">Product of Interest</label>
-                                    <select class="form-select" id="product">
+                                    <label for="product" class="form-label">Product of Interest *</label>
+                                    <select class="form-select" id="product" required>
                                         <option value="">Select a product</option>
-                                        <option value="diesel">Diesel (EN590)</option>
+                                        <option value="diesel">Diesel EN590 (10ppm, 50ppm, 500ppm)</option>
                                         <option value="jetfuel">Jet Fuel A1</option>
-                                        <option value="gasoline">Gasoline</option>
-                                        <option value="gold">Gold Bars</option>
+                                        <option value="d6">Diesel D6</option>
+                                        <option value="gasoline">Gasoline (PMS 91, 95, 98)</option>
+                                        <option value="jp54">Aviation Kerosen JP54</option>
+                                        <option value="gold">Gold Bars (AU)</option>
                                         <option value="sugar">Sugar ICUMSA 45</option>
+                                        <option value="sunflower">Sunflower Oil</option>
+                                        <option value="rice">Rice</option>
                                         <option value="others">Other Commodities</option>
                                     </select>
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-4">
                                     <label for="message" class="form-label">Message *</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <textarea class="form-control" id="message" rows="5" required placeholder="Please provide details about your inquiry including quantity requirements, delivery destination, and any specific requirements..."></textarea>
                                 </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary btn-lg">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                                
+                                <div class="d-grid gap-3">
+                                    <button type="button" id="sendWhatsApp" class="btn btn-success btn-lg">
+                                        <i class="fab fa-whatsapp me-2"></i> Send via WhatsApp
+                                    </button>
+                                    <button type="button" id="sendEmail" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-envelope me-2"></i> Send via Email
+                                    </button>
+                                </div>
+                                
+                                <div class="text-center mt-3">
+                                    <p class="small text-muted">By submitting, you agree to our <a href="#privacy" class="text-primary">Privacy Policy</a></p>
                                 </div>
                             </form>
                         </div>
@@ -867,110 +1294,110 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h4 class="mb-4">
-                        <i class="fas fa-gas-pump me-2"></i>SAMIA<span style="color: var(--secondary-color)">GROUP</span>
-                    </h4>
-                    <p class="mb-4">A leading commodities trading company specializing in petroleum products and global trade solutions with flexible payment options.</p>
-                    <div class="d-flex">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <img src="images/logo.png" alt="SAMIA GROUP Logo" style="height: 70px;">
+                    </div>
+                    <p class="mb-4">A premier commodities trading company specializing in petroleum products and global trade solutions with flexible payment options for markets worldwide.</p>
+                    
+                    <div class="d-flex align-items-start">
                         <img src="https://flagcdn.com/w40/bj.png" class="flag-icon" alt="Benin Flag">
-                        <div>
+                        <div class="ms-3">
                             <h6>Benin Republic, West Africa</h6>
-                            <p class="small">RCCM No RB/ABC/24 B7687<br>IFU N° 3202414945211</p>
+                            <p class="small mb-0">RCCM No RB/ABC/24 B7687<br>IFU N° 3202414945211</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
                     <h5 class="mb-4">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#home">Home</a></li>
-                        <li class="mb-2"><a href="#about">About Us</a></li>
-                        <li class="mb-2"><a href="#products">Products</a></li>
-                        <li class="mb-2"><a href="#payment">Payment Methods</a></li>
-                        <li class="mb-2"><a href="#contact">Contact</a></li>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#payment">Payment Methods</a></li>
+                        <li><a href="#ceo">CEO Profile</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="mb-4">Our Products</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#products">Petroleum Products</a></li>
-                        <li class="mb-2"><a href="#products">Gold Bars (AU)</a></li>
-                        <li class="mb-2"><a href="#products">Sugar ICUMSA 45</a></li>
-                        <li class="mb-2"><a href="#products">Sunflower Oil</a></li>
-                        <li class="mb-2"><a href="#products">Rice</a></li>
+                    <ul class="footer-links">
+                        <li><a href="#products">Diesel EN590</a></li>
+                        <li><a href="#products">Jet Fuel A1</a></li>
+                        <li><a href="#products">Gold Bars (AU)</a></li>
+                        <li><a href="#products">Sugar ICUMSA 45</a></li>
+                        <li><a href="#products">Sunflower Oil</a></li>
+                        <li><a href="#products">Rice</a></li>
                     </ul>
                 </div>
                 
                 <div class="col-lg-3">
                     <h5 class="mb-4">Certifications</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Importer Card Valid</li>
-                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Tax Registration</li>
-                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Business License</li>
-                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Bank Verified</li>
-                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> International Trade Compliant</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Importer Card: 300CPI24</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Tax Registration: Valid</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Business License: Active</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Bank Verified: BIIC Benin</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> APIEx Certified</li>
                     </ul>
+                    
+                    <div class="mt-4">
+                        <h6>Subscribe for Updates</h6>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-secondary" type="button">Subscribe</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <div class="copyright">
-                <p class="mb-0">&copy; 2024 SAMIA GROUP SARL. All Rights Reserved. | Designed with <i class="fas fa-heart text-danger"></i> for the Petroleum Industry</p>
+                <div class="row">
+                    <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
+                        <p class="mb-0">&copy; 2024 SAMIA GROUP SARL. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end text-center">
+                        <p class="mb-0">Designed for the Global Petroleum Industry | <a href="#privacy" class="text-white">Privacy Policy</a> | <a href="#terms" class="text-white">Terms of Service</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="btn btn-primary btn-lg back-to-top">
+    <a href="#home" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-        
         // Back to Top Button
-        const backToTopButton = document.createElement('a');
-        backToTopButton.href = '#home';
-        backToTopButton.className = 'btn btn-primary btn-lg back-to-top';
-        backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
-        backToTopButton.style.position = 'fixed';
-        backToTopButton.style.bottom = '20px';
-        backToTopButton.style.right = '20px';
-        backToTopButton.style.zIndex = '1000';
-        backToTopButton.style.borderRadius = '50%';
-        backToTopButton.style.width = '60px';
-        backToTopButton.style.height = '60px';
-        backToTopButton.style.display = 'flex';
-        backToTopButton.style.alignItems = 'center';
-        backToTopButton.style.justifyContent = 'center';
-        backToTopButton.style.display = 'none';
-        document.body.appendChild(backToTopButton);
+        const backToTop = document.querySelector('.back-to-top');
         
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 300) {
-                backToTopButton.style.display = 'flex';
+                backToTop.classList.add('active');
             } else {
-                backToTopButton.style.display = 'none';
+                backToTop.classList.remove('active');
             }
         });
         
-        // Form Submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will contact you soon.');
-            this.reset();
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+                document.querySelector('.navbar-brand img').style.height = '50px';
+            } else {
+                navbar.style.padding = '15px 0';
+                navbar.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
+                document.querySelector('.navbar-brand img').style.height = '60px';
+            }
         });
         
         // Smooth scrolling for navigation links
@@ -983,56 +1410,193 @@
                 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navbarCollapse).toggle();
+                    }
+                    
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Form Submission - WhatsApp
+        document.getElementById('sendWhatsApp').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const company = document.getElementById('company').value;
+            const product = document.getElementById('product').value;
+            const message = document.getElementById('message').value;
+            
+            // Validate required fields
+            if (!name || !email || !phone || !product || !message) {
+                alert('Please fill all required fields marked with *');
+                return;
+            }
+            
+            // Create WhatsApp message
+            const whatsappMessage = `New Inquiry from SAMIA GROUP Website:%0A%0A` +
+                                   `Name: ${name}%0A` +
+                                   `Email: ${email}%0A` +
+                                   `Phone: ${phone}%0A` +
+                                   `Company: ${company || 'Not provided'}%0A` +
+                                   `Product Interest: ${product}%0A` +
+                                   `Message: ${message}`;
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/22890721822?text=${encodedMessage}`, '_blank');
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+            
+            // Show success message
+            alert('Your message has been prepared for WhatsApp. Please send it when WhatsApp opens.');
+        });
+        
+        // Form Submission - Email
+        document.getElementById('sendEmail').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const company = document.getElementById('company').value;
+            const product = document.getElementById('product').value;
+            const message = document.getElementById('message').value;
+            
+            // Validate required fields
+            if (!name || !email || !phone || !product || !message) {
+                alert('Please fill all required fields marked with *');
+                return;
+            }
+            
+            // Create email content
+            const subject = `New Inquiry: ${product} - ${name}`;
+            const body = `New Inquiry from SAMIA GROUP Website:%0A%0A` +
+                        `Name: ${name}%0A` +
+                        `Email: ${email}%0A` +
+                        `Phone: ${phone}%0A` +
+                        `Company: ${company || 'Not provided'}%0A` +
+                        `Product Interest: ${product}%0A%0A` +
+                        `Message:%0A${message}%0A%0A` +
+                        `Sent via SAMIA GROUP Website Contact Form`;
+            
+            // Open default email client
+            window.location.href = `mailto:samiasarl2020@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+            
+            // Show success message
+            alert('Your email client will open with the message. Please send it to complete your inquiry.');
+        });
+        
+        // Form validation
+        const contactForm = document.getElementById('contactForm');
+        const inputs = contactForm.querySelectorAll('input, select, textarea');
+        
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (!this.value && this.hasAttribute('required')) {
+                    this.classList.add('is-invalid');
+                } else {
+                    this.classList.remove('is-invalid');
+                }
+            });
+        });
+        
+        // Add CSS for invalid fields
+        const style = document.createElement('style');
+        style.textContent = `
+            .is-invalid {
+                border-color: #dc3545 !important;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+                background-repeat: no-repeat;
+                background-position: right calc(0.375em + 0.1875rem) center;
+                background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Create fuel drops dynamically
+        function createFuelDrops() {
+            const fuelAnimation = document.querySelector('.fuel-animation');
+            if (fuelAnimation && window.innerWidth > 768) {
+                // Clear existing drops
+                fuelAnimation.innerHTML = '';
+                
+                // Create new drops
+                for (let i = 0; i < 6; i++) {
+                    const drop = document.createElement('div');
+                    drop.className = 'fuel-drop';
+                    drop.style.left = `${15 + (i * 15)}%`;
+                    drop.style.animationDelay = `${i * 0.5}s`;
+                    fuelAnimation.appendChild(drop);
+                }
+            }
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', createFuelDrops);
+        window.addEventListener('resize', createFuelDrops);
+        
+        // Add active class to nav links based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPos = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
                     });
                 }
             });
         });
         
-        // Navbar background on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
-            } else {
-                navbar.classList.remove('navbar-scrolled');
-            }
-        });
-        
-        // Add navbar scroll effect CSS
-        const style = document.createElement('style');
-        style.textContent = `
-            .navbar-scrolled {
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                background-color: rgba(255, 255, 255, 0.98) !important;
-                backdrop-filter: blur(10px);
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // Fade in elements on scroll
-        const fadeElements = document.querySelectorAll('.fade-in-up');
-        
-        const fadeInOnScroll = function() {
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
+        // Animate elements on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.stat-box, .card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
                 
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('visible');
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
                 }
             });
         };
         
-        // Set initial state and trigger on load
-        fadeElements.forEach(element => {
-            element.classList.remove('visible');
+        // Set initial state
+        document.querySelectorAll('.stat-box, .card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         });
         
-        window.addEventListener('load', fadeInOnScroll);
-        window.addEventListener('scroll', fadeInOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
     </script>
 </body>
-        </html>
+                            </html>
